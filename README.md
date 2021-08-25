@@ -39,7 +39,7 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 Tested/Untested
 
 Speakers : Tested
-Headphone jack : Untested
+Headphone jack : Tested
 Internal keyboard : Tested
 Touchpad : tested
 Usb ports + USB-C port : tested
