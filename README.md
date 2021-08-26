@@ -38,7 +38,7 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 
 Tested/Untested
 
-Speakers : Tested
+Speakers & Microphone : Tested
 Headphone jack : Tested
 Internal keyboard : Tested
 Touchpad : tested
@@ -53,6 +53,7 @@ Specs for tested Aspire 5:
 1.30ghz Intel Core i7-1065G7 (Ice Lake)
 8GB RAM
 Intel Iris Plus Graphics 1536MB
+Realtek ALC255
 
 SMBIOS used for my model (recommended to follow guide link in **What is needed to be changed**)
 MacBookAir9,1 (MacBook Air, Retina, 13 inch, 2020)
