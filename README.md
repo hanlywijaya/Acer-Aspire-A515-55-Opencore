@@ -8,10 +8,10 @@ Opencore EFI for Acer Aspire 5 (A515-55).
 FAQ:
 
 Q: Why did you upload an EFI of Opencore for the A515-55?
-A: I found that many people haven't hackintoshed the A515-55 and I wanted to try it. I also wanted to upload it for people to try and use it to see if they can work with it.
+A: I found that many people haven't hackintoshed the A515-55 and I wanted to try it. I also wanted to upload it for people to try and use it for hackintoshing their systems.
 
 Q: What OS do you recommend for fixing up things for this EFI?
-A: I do recommend having an existing macOS installation to edit bits and pieces of these. Things needed to change by you will be below.
+A: I do recommend having an existing macOS installation to edit bits and pieces of the EFI. Things needed to change by you will be below.
 
 Q: What version of Opencore and model of Aspire A515-55 is recommended for this?
 A: The version of Opencore used on the Aspire A515-55 is 0.7.2 (latest as of 7 sep 2021) & the model of A515-55 that I recommend using is an Intel Ice lake model of the Aspire 5.
@@ -20,7 +20,7 @@ Q: Can I use this on other models of Acers? (Aspire 3, Swift, etc)
 A: There is a chance it will work but it is not guaranteed to work properly due to this EFI being specifically built for Acer Aspire A515-55.
 
 Q: Will I need to map anything on macOS?
-A: I recommend changing option to command and command to option. You can keep it the way it is if you like. You change the mapping from the keyboard preferences in System Preferences.
+A: I recommend changing the option key to command then changing command to option in the keyboard pane located in System Preferences.
 
 Q: What is the recommended version of macOS with this EFI?
 A: I recommend using macOS Big Sur 11.5.1 (the latest of the time) as it is very reliable and easy to do.
