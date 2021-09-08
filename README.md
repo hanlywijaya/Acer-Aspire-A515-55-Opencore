@@ -14,7 +14,7 @@ Q: What OS do you recommend for fixing up things for this EFI?
 A: I do recommend having an existing macOS installation to edit bits and pieces of the EFI. Things needed to change by you will be below.
 
 Q: What version of Opencore and model of Aspire A515-55 is recommended for this?
-A: The version of Opencore used on the Aspire A515-55 is 0.7.2 (latest as of 7 sep 2021) & the model of A515-55 that I recommend using is an Intel Ice lake model of the Aspire 5.
+A: The version of Opencore used on the Aspire A515-55 is 0.7.3 (latest as of 8 sep 2021) & the model of A515-55 that I recommend using is an Intel Ice lake model of the Aspire 5.
 
 Q: Can I use this on other models of Acers? (Aspire 3, Swift, etc)
 A: There is a chance it will work but it is not guaranteed to work properly due to this EFI being specifically built for Acer Aspire A515-55.
