@@ -42,6 +42,9 @@ A: This EFI is optimized for Big Sur and you will need to modify many things wit
 Q: When I login, the screen goes black for a few seconds. What can I do?
 A: Since its a Ice Lake Intel system, this cannot be fixed at the moment. Its normal due to the Intel GPU (iGPU) not working properly with macOS.
 
+Q: What happened to the boot GUI from 0.7.2 & 0.7.2-2 on 0.7.3?
+A: The GUI has not been working with 0.7.3 and I will be looking for a solution. The solution may come out for 0.7.3-2 or 0.7.4. You can use the arrows key to direct up and down and tab to go to restart or shut down.
+
 What is needed to be changed?
 You will need to change the model number/serial number/etc to fix iCloud and etc. - https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios. You will also need to change a few things in the BIOS. To boot into the BIOS, turn on the computer, press & hold F2 (function key row) until it shows a blue screen with some text (may show a password, type the password set for the BIOS if needed). You will need to go to the 2nd tab of the BIOS by pressing the right arrow key and press Ctrl+S (no + btw). You will need to change the disk type from Optane to AHCI & make sure that the touchpad is in I2C mode. I recommend also enabling the F12 boot menu so you can easily change boot disks (Opencore EFI to Windows partition, etc) & go to the 2nd last tab then setting a password then disabling Secure boot. You will need to disable Secure boot since this is not an EFI that supports Secure boot. You will also need to type your password whenever you need to boot into the BIOS so make sure you remember the password. You can go to the last tab and save & exit.
 
