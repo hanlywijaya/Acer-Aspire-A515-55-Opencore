@@ -67,7 +67,7 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 - [x] Battery Readings
 - [x] Ethernet
 - [x] Wifi + Bluetooth
-- [x] Display Brightness and control with Keys
+- [x] Display Brightness Control (partially working with 0.7.4)
 - [ ] Sleep Functionality
 - [x] USB ports (3.0, 2.0 & USB-C)
 - [x] Webcam
