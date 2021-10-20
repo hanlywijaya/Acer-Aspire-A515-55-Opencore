@@ -68,12 +68,12 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 - [x] Ethernet
 - [x] Wifi + Bluetooth
 - [x] Display Brightness Control (partially working with 0.7.4)
-- [ ] Sleep Functionality 
+- [ ] Sleep Functionality (you can use lid open and sleep as a alternative)
 - [x] Lid Close and Open (semi-working)
 - [x] USB ports (3.0, 2.0 & USB-C)
 - [x] Webcam
 - [x] Trackpad with multi finger gestures 
-- [ ] HDMI
+- [ ] HDMI (you can use AirPlay/USB-C to HDMI as a alternative)
 - [x] Native hotkey support with Fn keys
 
 ### Specs for tested Aspire 5:
