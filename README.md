@@ -1,10 +1,10 @@
 # Acer-Aspire-A515-55-Opencore
-Opencore EFI for Acer Aspire 5 (A515-55).
+Opencore EFI for Acer Aspire 5 (A515-55). Intended for Ice Lake systems, may work on other types of CPU families but not guaranteed to work and function as intended.
 
 ### **I am not responsible for any damage or if your computer turns into a lemon all of a sudden. Everything you do is not guaranteed to work & you are responsible.**
 ### **PLEASE READ THE WHOLE README FILE TO UNDERSTAND WHAT TO DO FOR THIS EFI.**
 
-### Supports macOS Big Sur 11.6
+### Supports macOS Big Sur and macOS Monterey (coming soon)
 
 ### FAQ:
 
@@ -68,7 +68,8 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 - [x] Ethernet
 - [x] Wifi + Bluetooth
 - [x] Display Brightness Control (partially working with 0.7.4)
-- [ ] Sleep Functionality
+- [ ] Sleep Functionality 
+- [x] Lid Close and Open (semi-working)
 - [x] USB ports (3.0, 2.0 & USB-C)
 - [x] Webcam
 - [x] Trackpad with multi finger gestures 
@@ -116,6 +117,28 @@ For upgrading your EFI, you simply only need to follow all the steps and use the
 $ sudo trimforce enable
 
 ```
+
+### The transition from Big Sur to Monterey
+macOS Monterey 12.0 will be released on the 25th of October and will need a whole new EFI. The best way of an easy transition is going to be the steps on how to install/upgrade to Monterey soon. The new EFI may be take up to Oct 30 for it to be released. Many things may be problems and as we get more Monterey updates, the more that gets fixed.
+
+### How to update
+
+-- If you are simply updating for example (11.6 to 11.6.1), you can simply update it like any Mac.
+
+-- If you are updating to a new OS for example (Big Sur to Monterey), you need to follow the steps below.
+1. Download the OS installer. You can get one from the App Store.
+2. Get a 16GB USB/partition and format it as a Extended Journal & not APFS. Make sure it is a GUID Table too.
+3. Back up your computer with Time Machine or copy your files to iCloud/USB/SSD to keep it safe. (Optional)
+4. Download the latest EFI for the OS you need in the releases page of this repository.
+5. Install the EFI **on the USB/partition** and do the needed steps. **DO NOT INSTALL THE EFI ON YOUR EXISTING MACOS PARTITION OTHERWISE YOU MAY NOT BE ABLE TO BOOT INTO THE OS ALREADY INSTALLED ON YOUR DISK (SSD/HDD)** (steps somewhere above in this README)
+6. Use createinstallmedia of your installer onto your USB. You will need a Mac and instructions are on https://support.apple.com/en-us/HT201372.
+7. Boot into the external USB EFI and boot into your installer.
+8. **(Optional)** You can boot into your BIOS and make your USB the first boot selection.
+9. Install macOS like normal. **DO NOT ERASE YOUR DISK UNLESS YOU WOULD LIKE A FRESH INSTALL INSTEAD OF A KEEP ALL FILES IN SAME STATE UPGRADE.** Make sure that when your computer reboots while installing, that you boot into your USB's EFI and boot into 'macOS Installer'.
+10. When your computer doesn't show 'macOS Installer' and instead shows your disk's name, that means that your installation is complete.
+11. Boot into your install through the USB and continue setup like normal. If you wiped your computer to have a fresh install, you can either set it up as a new Mac or restore a Time Machine backup or simply migrate using the Migration Assistant later.
+12. You will need to copy your USB's EFI to your computer. Simply follow the steps above in the README and instead of getting a fresh copy of the latest EFI for your OS from the repository, simply copy the EFI from your USB and use that, unless the EFI is acting funny.
+13. Congrats! You're done!
 
 ### Development and Functionality
 If you would like to help/add items to give extra functionality to Aspire A515-55, you can make an issue with the tag 'feature enhancement'.
