@@ -119,7 +119,7 @@ $ sudo trimforce enable
 ```
 
 ### The transition from Big Sur to Monterey
-macOS Monterey 12.0 will be released on the 25th of October and will need a whole new EFI. The best way of an easy transition is going to be the steps on how to install/upgrade to Monterey soon. The new EFI may be take up to Oct 30 for it to be released. Many things may be problems and as we get more Monterey updates, the more that gets fixed.
+macOS Monterey 12.0 will be released on the 25th of October and will need a whole new EFI. The best way of an easy transition is going to be the steps on how to install/upgrade to Monterey soon. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, I advise you to upgrade to 0.7.4-3-BS & stay on Big Sur.
 
 ### How to update
 
