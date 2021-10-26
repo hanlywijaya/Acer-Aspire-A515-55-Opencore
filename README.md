@@ -4,7 +4,7 @@ Opencore EFI for Acer Aspire 5 (A515-55). Intended for Ice Lake systems, may wor
 ### **I am not responsible for any damage or if your computer turns into a lemon all of a sudden. Everything you do is not guaranteed to work & you are responsible.**
 ### **PLEASE READ THE WHOLE README FILE TO UNDERSTAND WHAT TO DO FOR THIS EFI.**
 
-### Supports macOS Big Sur and macOS Monterey (coming soon)
+### Supports macOS Big Sur and macOS Monterey (can be installed now!)
 
 ### FAQ:
 
@@ -24,7 +24,7 @@ Q: Will I need to map anything on macOS?
 A: I recommend changing the option key to command then changing command to option in the keyboard pane located in System Preferences.
 
 Q: What is the recommended version of macOS with this EFI?
-A: I recommend using macOS Big Sur 11.6 (the latest of the time) as it is very reliable and easy to do.
+A: I recommend using macOS Big Sur as it is very reliable and easy to do. For Big Sur, make sure you use 0.7.4-3-BS. If you would like to use Monterey, use the latest EFI and make sure all your apps will work. Keep in mind that IntelBluetooth doesn't function with Monterey atm.
 
 Q: Do I need to change anything in the config.plist file?
 A: You will need to change the model number along with the serial number. You can keep the model number but I do recommend following the Opencore guide linked in this answer. The link is below in what is needed to be changed. (https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios)
@@ -119,7 +119,7 @@ $ sudo trimforce enable
 ```
 
 ### The transition from Big Sur to Monterey
-macOS Monterey 12.0 will be released on the 25th of October and will need a whole new EFI. The best way of an easy transition is going to be the steps on how to install/upgrade to Monterey soon. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, I advise you to upgrade to 0.7.4-3-BS & stay on Big Sur.
+Monterey requires different drivers and kexts meaning, that you have to use 0.7.4-3-M or newer to install and use Monterey. The best way of an easy transition is following the steps on how to install/upgrade to Monterey. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, I advise you to upgrade to 0.7.4-3-BS & stay on Big Sur. Monterey is now available to update.
 
 ### How to update
 
