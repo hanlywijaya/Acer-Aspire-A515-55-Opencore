@@ -110,7 +110,7 @@ For upgrading your EFI, you simply only need to follow all the steps and use the
 - Create a Bootable USB for MacOS by using by Dortania's [OpenCore-Install-Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/).
 - Install MacOS to SSD / Hard drive. (While installing, connect USB keyboard and mouse).
 - Copy **ALL** the Contains of this Repo inside the EFI partition of SSD / Hard drive.
-- **[IMPORTANT]** Make sure to Generate system definitions of MacBook pro 15,4 in config.plist file using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) & add `SystemSerialNumber`, `SystemUUID` and `MLB`.
+- **[IMPORTANT]** Make sure to Generate system definitions of MacBookPro16,2 (for those who use 10th gen Intel/Ice Lake) in config.plist file using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) & add `SystemSerialNumber`, `SystemUUID` and `MLB`.
 
 ### Post Installation
 - If you have Installed MacOS on SSD, Enable TRIM using following command:
