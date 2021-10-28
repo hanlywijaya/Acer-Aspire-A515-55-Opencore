@@ -82,8 +82,11 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 Intel Iris Plus Graphics 1536MB (iGPU)
 Realtek ALC255 (using layout 30 for AppleALC)
 
-SMBIOS used for my model (recommended to follow guide link in **What is needed to be changed**)
-MacBookAir9,1 (MacBook Air, Retina, 13 inch, 2020)
+### SMBIOS used for my model (recommended to follow guide link in **What is needed to be changed**)
+MacBookPro16,2 (13-inch, 2020, Four Thunderbolt 3 ports)
+
+### How to fix IntelBluetooth on 0.7.4-3-M to 0.7.5
+Good news! Intel Bluetooth has gotten a fix on Monterey and now functions as intended. I will be sending out 0.7.5-M when 0.7.5-stock is ready from Acidanthera. If you would like to fix yours up, I recommend using MacBookPro16,2 SMBIOS (for Ice Lake). You have to use the latest commit, **not release** from github.com/dortania/build-repo & make sure that IntelBluetoothInjector is removed/disabled from config.plist. Reset the NVRAM through the Opencore Boot Picker then you are all set!
 
 ### BIOS Settings
 * *Security* → Set supervisor password (to disable secure boot)
@@ -119,7 +122,7 @@ $ sudo trimforce enable
 ```
 
 ### The transition from Big Sur to Monterey
-Monterey requires different drivers and kexts meaning, that you have to use 0.7.4-3-M or newer to install and use Monterey. The best way of an easy transition is following the steps on how to install/upgrade to Monterey. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, I advise you to upgrade to 0.7.4-3-BS & stay on Big Sur. Monterey is now available to update.
+Monterey requires different drivers and kexts meaning, that you have to use 0.7.4-3-M or newer to install and use Monterey. The best way of an easy transition is following the steps on how to install/upgrade to Monterey. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth in 0.7.4-3-M. 0.7.5-M will resolve that issue and will be able to be used no problem. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, lucky news! You can get 0.7.5 soon & will be able to have perfectly functioning IntelBluetooth! Monterey is now available to update.
 
 ### How to update
 
