@@ -15,7 +15,7 @@ Q: What OS do you recommend for fixing up things for this EFI?
 A: I do recommend having an existing macOS installation to edit bits and pieces of the EFI. Things needed to change by you will be below.
 
 Q: What version of Opencore and model of Aspire A515-55 is recommended for this?
-A: The version of Opencore used on the Aspire A515-55 is 0.7.4 (latest as of 8 October 2021) & the model of A515-55 that I recommend using is an Intel Ice Lake model of the Aspire 5.
+A: The version of Opencore used on the Aspire A515-55 is 0.7.5 (latest as of 3 November 2021) & the model of A515-55 that I recommend using is an Intel Ice Lake model of the Aspire 5.
 
 Q: Can I use this on other models of Acers? (Aspire 3, Swift, etc)
 A: There is a chance it will work but it is not guaranteed to work properly due to this EFI being specifically built for Acer Aspire A515-55.
@@ -24,7 +24,7 @@ Q: Will I need to map anything on macOS?
 A: I recommend changing the option key to command then changing command to option in the keyboard pane located in System Preferences.
 
 Q: What is the recommended version of macOS with this EFI?
-A: I recommend using macOS Big Sur as it is very reliable and easy to do. For Big Sur, make sure you use 0.7.4-3-BS. If you would like to use Monterey, use the latest EFI and make sure all your apps will work. Keep in mind that IntelBluetooth doesn't function with Monterey atm.
+A: I recommend using macOS Big Sur as it is very reliable and easy to do. For Big Sur, make sure you use 0.7.4-3-BS. If you would like to use Monterey, use the latest EFI and make sure all your apps will work.
 
 Q: Do I need to change anything in the config.plist file?
 A: You will need to change the model number along with the serial number. You can keep the model number but I do recommend following the Opencore guide linked in this answer. The link is below in what is needed to be changed. (https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios)
@@ -67,7 +67,7 @@ I recommend if you are using a different type of CPU model, to follow the Openco
 - [x] Battery Readings
 - [x] Ethernet
 - [x] Wifi + Bluetooth
-- [x] Display Brightness Control (partially working with 0.7.4)
+- [x] Display Brightness Control (partially working with 0.7.5)
 - [ ] Sleep Functionality (you can use lid open and sleep as a alternative)
 - [x] Lid Close and Open (semi-working)
 - [x] USB ports (3.0, 2.0 & USB-C)
@@ -122,7 +122,7 @@ $ sudo trimforce enable
 ```
 
 ### The transition from Big Sur to Monterey
-Monterey requires different drivers and kexts meaning, that you have to use 0.7.4-3-M or newer to install and use Monterey. The best way of an easy transition is following the steps on how to install/upgrade to Monterey. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth in 0.7.4-3-M. 0.7.5-M will resolve that issue and will be able to be used no problem. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, lucky news! You can get 0.7.5 soon & will be able to have perfectly functioning IntelBluetooth! Monterey is now available to update.
+Monterey requires different drivers and kexts meaning, that you have to use 0.7.4-3-M or newer to install and use Monterey. The best way of an easy transition is following the steps on how to install/upgrade to Monterey. The new EFI is released. Many things may be problems and as we get more Monterey updates, the more that gets fixed. 0.7.4-3-M is built for Monterey which also supports the RC version (12.0.1). Only thing not functioning properly is IntelBluetooth in 0.7.4-3-M. 0.7.5-M will resolve that issue and will be able to be used no problem. More info on that on https://github.com/hanlywijaya/Acer-Aspire-A515-55-Opencore/issues/2. It may take up to 6 months for a proper transition. If Bluetooth is cruical to you, lucky news! You can get 0.7.5 now & will be able to have perfectly functioning IntelBluetooth! Monterey is now available to update.
 
 ### How to update
 
