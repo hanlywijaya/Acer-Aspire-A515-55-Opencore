@@ -1,6 +1,8 @@
 # Acer-Aspire-A515-55-Opencore
 Opencore EFI for Acer Aspire 5 (A515-55). Intended for Ice Lake systems, may work on other types of CPU families but not guaranteed to work and function as intended.
 
+### BE AWARE THAT THIS IS NO LONGER IN DEVELOPMENT AND YOU ARE TAKING A RISK. ###
+
 ### **I am not responsible for any damage or if your computer turns into a lemon all of a sudden. Everything you do is not guaranteed to work & you are responsible.**
 ### **PLEASE READ THE WHOLE README FILE TO UNDERSTAND WHAT TO DO FOR THIS EFI.**
 
